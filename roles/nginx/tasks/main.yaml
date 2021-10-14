@@ -11,6 +11,13 @@
       owner: root
       group: root
       mode: 0755
+- name: Copy symbolink script
+  copy:
+      src: symbolink.sh
+      dest: /home/ubuntu/symbolink.sh
+      mode: 0755
+  notify:
+      - Symbolink check
 - name: Delete index.html file
   file:
       path: /var/www/html/index.html
