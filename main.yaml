@@ -1,6 +1,6 @@
 # Install Nginx
-- hosts: localhost
-  connection: local
+- hosts: webserver
+  connection: ssh
   become: True
   become_user: root
   roles:
