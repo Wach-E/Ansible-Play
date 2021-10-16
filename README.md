@@ -27,3 +27,6 @@ To use, navigate to the cloned directory in the control node and run:
 On a successful play, the output would look like this:
 
 ![Ansible playbook output](https://github.com/Wach-E/Ansible-Play/blob/main/images/Ansile%20playbook%20output.png)
+
+Navigate to the IP of the remote machine and visit the root directory on port 80:
+![Nginx running successfully](https://github.com/Wach-E/Ansible-Play/blob/main/images/Nginx%20Running.png)
