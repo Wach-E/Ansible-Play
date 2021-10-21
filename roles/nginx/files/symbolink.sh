@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-cd /etc/nginx/sites-enabled && pwd
+cd /etc/nginx/sites-enabled
 if [[ -e site.conf ]]
 then
     :
