@@ -5,5 +5,5 @@ if [[ -e site.conf ]]
 then
     :
 else
-    ln -s ../sites-availale/site.conf
+    ln -s ../sites-available/site.conf
 fi
