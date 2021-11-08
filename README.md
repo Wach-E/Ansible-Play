@@ -11,6 +11,8 @@ Managed Node:
 * Sudo privileges
 ---
 
+![Alt](https://repobeats.axiom.co/api/embed/c0bab9778a2b2550b48448bb545791a6edbf6ce0.svg "Repobeats analytics image")
+
 The files contained in this repo is geared towards the automation process for installing and configuring Nginx reverse proxy on a remote machine using Ansible.
 
 The role technique is implemented with its standard file structure
