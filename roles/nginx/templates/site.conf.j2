@@ -1,8 +1,16 @@
 server {
-        listen   80;
-        server_name   {{ SERVER_NAME }};
-	location / {
-            root {{ FILE_PATH }};
-            index  index.html;
-        }
+  listen 80;
+  server_name demo-nginx.paraggaur.net;
+  return 301 https://$host$request_uri;
+}
+
+server{
+  listen 443 ssl;
+  server_name demo-nginx.paraggaur.net;
+  root /var/www/demo-nginx.paraggaur.net;
+  location /var/www/demo-nginx.paraggaur.net/vault/ {
+    proxy_pass https://demo-nginx.paraggaur.net/vault;
+  }
+  ssl_certificate /etc/nginx/ssl/status-cert.pem;
+  ssl_certificate_key /etc/nginx/ssl/status-private.key;
 }
