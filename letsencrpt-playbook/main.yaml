@@ -1,0 +1,10 @@
+---
+
+- hosts: nginx
+  remote_user: root
+  vars_files:
+    - ./external_vars.yml
+
+  tasks:
+  - name: certbot for SSL cert generation
+    command: certbot --nginx -d {{ fqdn }} --non-interactive --agree-tos -m {{ email_id }}

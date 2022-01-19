@@ -5,7 +5,7 @@
   tasks:
   - name: generate Nginx site config
     template:
-      src: /root/Playbook/nginx-deployment/Ansible-Play/roles/nginx/templates/site.conf.j2
+      src: ../templates/site.conf.j2
       dest: /etc/nginx/conf.d/demo-nginx.paraggaur.net.conf
       owner: root
       group: root
@@ -17,14 +17,14 @@
       state: directory
   - name: Generate index.html
     template:
-      src: /root/Playbook/nginx-deployment/Ansible-Play/roles/nginx/templates/index.html.j2
+      src: ../templates/index.html.j2
       dest: /var/www/demo-nginx.paraggaur.net/index.html
       owner: root
       group: root
       mode: 0755
   - name: Generate index.html
     template:
-      src: /root/Playbook/nginx-deployment/Ansible-Play/roles/nginx/templates/index_vault.html.j2
+      src: ../templates/index_vault.html.j2
       dest: /var/www/demo-nginx.paraggaur.net/vault/index.html
       owner: root
       group: root
