@@ -3,7 +3,7 @@
 Pre-requisites
 ---
 Control Node:
-* Python interpreter (preferably python3+)
+* Python interpreter (preferably python3)
 * OpenSSH Daemon
 
 Managed Node:
